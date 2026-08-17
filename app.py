@@ -1,0 +1,42 @@
+import urllib.request, json
+
+print("\n🐍 PYTHON CODE EXPLAINER")
+print("\nEnter Python code (type END to finish):")
+
+code = []
+while True:
+    line = input()
+    if line == "END":
+        break
+    code.append(line)
+
+code = "\n".join(code)
+
+while True:
+    print("\n1. Explain Code\n2. Find Errors\n3. Improve Code\n4. Exit")
+    choice = input("Enter choice: ")
+
+    if choice == "4":
+        break
+
+    task = {
+        "1": "Explain this Python code simply.",
+        "2": "Find errors in this Python code.",
+        "3": "Suggest improvements for this Python code."
+    }
+
+    data = {
+        "model": "llama3.2",
+        "prompt": task[choice] + "\n" + code,
+        "stream": False
+    }
+
+    request = urllib.request.Request(
+        "http://localhost:11434/api/generate",
+        json.dumps(data).encode(),
+        {"Content-Type": "application/json"}
+    )
+
+    response = urllib.request.urlopen(request)
+    result = json.loads(response.read())
+    print("\n🤖 Result:\n", result["response"])
