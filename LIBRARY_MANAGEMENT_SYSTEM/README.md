@@ -233,7 +233,7 @@ The project can be extended by adding:
 
 ## 👩‍💻 Author
 
-**Raksha Sahu**
+**Raksha**
 
 ### 📚 Library Management System
 
