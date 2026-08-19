@@ -131,7 +131,7 @@ Possible improvements include:
 
 ## 👩‍💻 Author
 
-**Raksha Sahu**
+**Raksha**
 
 ### ⭐ Project
 
