@@ -189,7 +189,7 @@ FOOD_MOOD_RECOMMENDATION/
 
 ## 👩‍💻 Author
 
-**Raksha Sahu**
+**Raksha**
 
 ### 🍴 Food Mood Recommendation System
 
