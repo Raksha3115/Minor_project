@@ -1,0 +1,147 @@
+# 🧮 BMI Calculator
+
+A simple **Python-based BMI Calculator** that calculates Body Mass Index (BMI) using the user's weight and height and displays the corresponding BMI category.
+
+## 🚀 Features
+
+* 👤 Takes the user's name
+* ⚖️ Accepts weight in kilograms
+* 📏 Accepts height in meters
+* 🧮 Calculates BMI automatically
+* 🔢 Rounds BMI to 2 decimal places
+* 📊 Displays the BMI category
+* 🖥️ Provides a simple console-based interface
+
+## 🛠️ Technologies Used
+
+* **Python 3**
+* User input
+* Variables
+* `float()` conversion
+* Arithmetic operations
+* `round()` function
+* `if-elif-else` conditional statements
+* Basic formatted console output
+
+## 📂 Project Structure
+
+```text
+BMI_CALCULATOR/
+│
+├── bmi_calculator.py
+└── README.md
+```
+
+## 🧠 How It Works
+
+The program first asks the user to enter:
+
+* Name
+* Weight in kilograms
+* Height in meters
+
+The BMI is calculated using the formula:
+
+```text
+BMI = Weight / (Height × Height)
+```
+
+In Python:
+
+```python
+bmi = weight / (height * height)
+```
+
+The `round()` function is then used to display the BMI up to two decimal places.
+
+## 📊 BMI Categories
+
+The program classifies the calculated BMI using these ranges:
+
+|   BMI Range | Category     |
+| ----------: | ------------ |
+|  Below 18.5 | Underweight  |
+| 18.5 – 24.9 | Normal range |
+|   25 – 29.9 | Overweight   |
+| 30 or above | Obesity      |
+
+> **Note:** BMI is a general screening measure and does not by itself provide a complete assessment of health.
+
+## 💻 Example Output
+
+```text
+====================================
+          BMI CALCULATOR
+====================================
+Enter your name: Raksha
+Enter your weight in kg: 45
+Enter your height in meters: 1.53
+
+====================================
+              RESULT
+====================================
+Name: Raksha
+Weight: 45.0 kg
+Height: 1.53 meters
+BMI: 19.22
+Category: Normal range
+====================================
+        Thank You!
+====================================
+```
+
+## ▶️ How to Run
+
+### Step 1: Open the project
+
+Open the project folder in **VS Code**, **Google Colab**, or any Python-supported environment.
+
+### Step 2: Run the Python file
+
+```bash
+python bmi_calculator.py
+```
+
+### Step 3: Enter the required information
+
+```text
+Enter your name:
+Enter your weight in kg:
+Enter your height in meters:
+```
+
+The program will calculate and display the BMI and category.
+
+## 🎯 Project Objective
+
+The main objective of this project is to demonstrate how Python can be used to create a simple **input-based calculator application**.
+
+This project provides practice with:
+
+* Variables
+* User input
+* Data type conversion
+* Mathematical calculations
+* Conditional statements
+* Functions such as `round()`
+* Console-based program design
+
+## 🔮 Future Improvements
+
+The project can be improved by adding:
+
+* ✅ Input validation for invalid values
+* 📊 BMI history
+* 🖥️ Graphical User Interface (GUI)
+* 💾 Save results to a file
+* 📈 BMI trend tracking
+* 📋 More detailed health information
+* 🌐 Web-based interface
+
+## 👩‍💻 Author
+
+**Raksha**
+
+### 🧮 BMI Calculator
+
+*A simple Python project for calculating and classifying BMI based on user-provided height and weight.*
