@@ -2,7 +2,7 @@ import ollama
 
 def summarize_text(text):
     prompt = f"""
-    Summarize the following text in 2-3 simple sentences:
+    Summarize the following text in 6-7 simple sentences:
 
     {text}
     """
