@@ -1,96 +1,232 @@
-```markdown
-# 🦙 Ollama AI CLI Assistant
+# 🤖 AI Study Assistant using Ollama
 
-A lightweight, interactive Command-Line Interface (CLI) chat assistant built with Python that connects to local large language models using the **Ollama API**.
+## 📌 Project Overview
 
----
+**AI Study Assistant** is a simple Python project that uses the **Ollama Chat API** and the **Llama 3.2 model** to help students understand different topics.
 
-## 📌 Features
+The user enters a topic, and the AI generates:
 
-- **100% Offline & Private:** Runs entirely on local hardware with zero data shared with third-party cloud services.
-- **Real-Time Token Streaming:** Renders model responses incrementally in the terminal.
-- **Context-Aware Memory:** Maintains multi-turn conversation history during the active session.
-- **Zero API Costs:** Uses local, open-source models with no subscription or token fees.
+* Definition
+* Important Points
+* Simple Example
+* Practice Questions
 
----
-
-## 🛠️ Tech Stack
-
-- **Language:** Python 3.10+
-- **Inference Engine:** [Ollama](https://ollama.com/)
-- **Default Model:** `llama3.2`
-- **Library:** `ollama`
+The project is designed using basic Python concepts and demonstrates how an AI language model can be integrated into a Python application.
 
 ---
 
-## 🚀 Getting Started
+## 🎯 Objective
 
-### 1. Prerequisites
+The main objective of this project is to learn:
 
-1. Download and install Ollama from [ollama.com](https://ollama.com/download).
-2. Pull the default model:
-   ```bash
-   ollama pull llama3.2
-
-```
-
-### 2. Installation
-
-1. Clone the repository:
-```bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
-cd YOUR_REPOSITORY_NAME
-
-```
-
-
-2. Install the required Python package:
-```bash
-pip install ollama
-
-```
-
-
+* How to integrate Ollama with Python
+* How to use the Ollama Chat API
+* How to create effective prompts
+* How to take input from a user
+* How to send input to an AI model
+* How to receive and display an AI-generated response
 
 ---
 
-## 💻 Usage
+## 🛠️ Technologies Used
 
-Run the assistant script:
-
-```bash
-python app.py
-
-```
-
-* Type your prompt and press **Enter** to chat.
-* Type `exit` or `quit` to terminate the session.
+* **Python**
+* **Ollama**
+* **Llama 3.2**
+* **Ollama Chat API**
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-├── app.py              # Main Python CLI script
-├── requirements.txt    # Project dependencies
-└── README.md           # Documentation
-
+AI-Study-Assistant/
+│
+├── app.py
+├── requirements.txt
+└── README.md
 ```
 
 ---
 
-## ⚙️ How It Works
+## ⚙️ Requirements
 
-1. **System Prompt Initialization:** Defines the assistant's behavior and personality in the `history` list.
-2. **Context Persistence:** Every user query and assistant response is appended to `history` to maintain context for multi-turn chats.
-3. **Streaming Inference:** Communicates with the local Ollama daemon (`http://127.0.0.1:11434`) using `ollama.chat(..., stream=True)` to stream generated tokens with minimal latency.
+Before running the project, install:
+
+### 1. Python
+
+Make sure Python is installed on your computer.
+
+### 2. Ollama
+
+Install Ollama on your system.
+
+### 3. Install Python Ollama package
+
+```bash
+pip install ollama
+```
+
+### 4. Download Llama 3.2
+
+```bash
+ollama pull llama3.2
+```
+
+Make sure the Ollama service is running before executing the Python program.
+
+---
+
+## ▶️ How to Run
+
+Run the Python file using:
+
+```bash
+python app.py
+```
+
+The program will display:
+
+```text
+===== AI STUDY ASSISTANT =====
+
+Enter a topic to study:
+```
+
+Enter any topic you want to learn.
+
+---
+
+## 💡 Example
+
+### Input
+
+```text
+Enter a topic to study: Python Functions
+```
+
+### Output
+
+```text
+===== STUDY NOTES =====
+
+1. Definition
+A function is a reusable block of code designed to perform a specific task.
+
+2. Important Points
+- Functions help reduce code repetition.
+- Functions can accept parameters.
+- Functions can return values.
+
+3. Simple Example
+def add(a, b):
+    return a + b
+
+4. Practice Questions
+1. What is a function?
+2. Why are functions used?
+3. What is a parameter?
+```
+
+---
+
+## 🔄 How the Project Works
+
+```text
+User enters a topic
+        ↓
+Python receives the input
+        ↓
+Prompt is created
+        ↓
+Ollama Chat API
+        ↓
+Llama 3.2 Model
+        ↓
+AI generates study material
+        ↓
+Python receives the response
+        ↓
+Study notes are displayed
+```
+
+---
+
+## 🧩 Main Function
+
+The project contains one main function:
+
+```python
+def study_assistant(topic):
+```
+
+This function:
+
+1. Takes the topic from the user.
+2. Creates a prompt with specific instructions.
+3. Sends the prompt to the Llama 3.2 model using Ollama.
+4. Receives the AI-generated response.
+5. Returns the study material.
+
+---
+
+## 📡 API Used
+
+This project uses the **Ollama Chat API** through the Python `ollama` library.
+
+The API is called using:
+
+```python
+ollama.chat()
+```
+
+The AI model used in this project is:
+
+```text
+Llama 3.2
+```
+
+---
+
+## 🌟 Features
+
+* Simple and beginner-friendly
+* Uses AI to generate study material
+* Provides structured learning content
+* Generates practice questions
+* Uses a locally running AI model through Ollama
+* Built using basic Python
+
+---
+
+## 🚀 Future Improvements
+
+The project can be enhanced by adding:
+
+* Multiple-choice quiz generation
+* Difficulty levels such as Easy, Medium and Hard
+* Different languages
+* PDF or document-based learning
+* Save notes to a file
+* Interactive quiz mode
+* Graphical User Interface
+
+---
+
+## 🎓 Learning Outcome
+
+Through this project, I learned how to connect a Python program with an AI language model using the Ollama Chat API.
+
+The main learning objective is **AI and API integration**, while the study assistant is the practical use case.
+
+---
+
+## 👩‍💻 Author
+
+**Raksha**
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the `LICENSE` file for details.
-
-```
-
-```
+This project is created for educational and learning purposes.
